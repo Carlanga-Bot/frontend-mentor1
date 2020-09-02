@@ -1,0 +1,104 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --relleno: 20px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  background: var(--LightGray);
+}
+
+.container {
+  margin: 30px 16px 30px 16px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 12px gray;
+}
+
+.header {
+  padding: 20px;
+  background: white;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.header h1 {
+  color: var(--Cyan);
+}
+.header h3 {
+  color: var(--BrightYellow);
+}
+.header p {
+  color: var(--GrayishBlue);
+}
+
+.caja-left {
+  padding: var(--relleno);
+  background: var(--Cyan);
+  color: var(--LightGray);
+}
+
+.caja-left button {
+  width: 100%;
+  padding: 16px;
+  background: var(--BrightYellow);
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 12px gray;
+}
+
+.precio {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.precio p {
+  color: rgb(211, 207, 207);
+  margin-left: 10px;
+}
+
+.caja-right {
+  background: hsl(179, 47%, 52%);
+  padding: 20px;
+  color: var(--LightGray);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.caja-right p {
+  color: var(--LightGray);
+  font-size: 14px;
+}
+
+/*VERSION DESKTOP*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0px 100px 0px 100px;
+  }
+
+  .todo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .caja-right {
+    border-radius: 0px 0px 8px 0px;
+  }
+
+  .caja-left {
+    border-radius: 0px 0px 0px 8px;
+  }
+}
